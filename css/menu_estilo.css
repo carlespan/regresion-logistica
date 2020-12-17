@@ -3,11 +3,14 @@
 	padding: .5%;
 	border: outset 5px #999;
 }
-
 #indice_summary{
 	font-style: italic; 
 	font-weight: bold;
 	font-size: 150%;
+}
+
+#titulo{
+	margin-left: -1.5%;
 }
 
 .contenidos{
