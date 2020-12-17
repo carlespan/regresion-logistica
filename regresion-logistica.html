@@ -13071,6 +13071,33 @@ div#notebook {
     </script>
     <!-- End of mathjax configuration --></head>
 <body>
+
+<details id="indice"><summary id="indice_summary">Indice</summary>  
+      <nav class="contenidos">
+          <ul class="lista">
+            <li><a href="#apartado1">1. Análisis exploratorio</a></li>
+            <li><a href="#apartado2">2. Preprocesado de datos<i class="fas fa-caret-down"></i></a>
+              <ul class="sublista">
+                <li><a href="#apartado2-1">2.1. Conversión de variables categóricas a dummies</a></li>
+                <li><a href="#apartado2-2">2.2. Selección de variables para la creación del modelo</a></li>
+              </ul>
+            </li>
+            <li><a href="#apartado3">3. Implementación del modelo de regresión logística con statsmodel.api</a></li>
+            <li><a href="#apartado4">4. Implementación del modelo de regresión logística con scikit-learn</a></li>
+            <li><a href="#apartado5">5. Validación del modelo</a><i class="fas fa-caret-down"></i>
+              <ul class="sublista">
+                <li><a href="#apartado5-1">5.1. Validación cruzada</a></li>
+                <li><a href="#apartado5-2">5.2. Matrices de confusión y curvas ROC</a></li>
+              </ul>
+            </li>
+          </ul>
+      </nav>
+  </details>
+
+  <link rel="stylesheet" type="text/css" href="css/menu_estilo.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
@@ -13078,6 +13105,13 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Regresi&#243;n-log&#237;stica-para-predicciones-bancarias">Regresi&#243;n log&#237;stica para predicciones bancarias<a class="anchor-link" href="#Regresi&#243;n-log&#237;stica-para-predicciones-bancarias">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="apartado1"> 1. Análisis exploratorio </h2>
 </div>
 </div>
 </div>
@@ -14530,7 +14564,14 @@ Name: y, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Conversi&#243;n-de-las-variables-categ&#243;ricas-a-dummies-y-borrado-de-las-originales">Conversi&#243;n de las variables categ&#243;ricas a dummies y borrado de las originales<a class="anchor-link" href="#Conversi&#243;n-de-las-variables-categ&#243;ricas-a-dummies-y-borrado-de-las-originales">&#182;</a></h3>
+<h2 id="apartado2"> 2. Preprocesado de datos </h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="apartado2-1"> 2.1. Conversión de variables categóricas a variables dummies</h3>
 </div>
 </div>
 </div>
@@ -14630,7 +14671,7 @@ Name: y, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Selecci&#243;n-de-rasgos-para-el-modelo">Selecci&#243;n de rasgos para el modelo<a class="anchor-link" href="#Selecci&#243;n-de-rasgos-para-el-modelo">&#182;</a></h3>
+<h3 id="apartado2-2"> 2.2. Selección de variables para la creación del modelo</h3>
 </div>
 </div>
 </div>
@@ -15037,7 +15078,7 @@ Name: y, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Implementaci&#243;n-del-modelo-en-Python-con-statsmodel.api">Implementaci&#243;n del modelo en Python con statsmodel.api<a class="anchor-link" href="#Implementaci&#243;n-del-modelo-en-Python-con-statsmodel.api">&#182;</a></h3>
+<h2 id="apartado3"> 3. Implementación del modelo de regresión logística con statsmodel.api</h2>
 </div>
 </div>
 </div>
@@ -15204,7 +15245,7 @@ Name: y, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Implementaci&#243;n-del-modelo-en-Python-con-scikit-learn">Implementaci&#243;n del modelo en Python con scikit-learn<a class="anchor-link" href="#Implementaci&#243;n-del-modelo-en-Python-con-scikit-learn">&#182;</a></h3>
+<h2 id="apartado4"> 4. Implementación del modelo de regresión logística con scikit-learn</h2>
 </div>
 </div>
 </div>
@@ -15469,7 +15510,7 @@ Name: y, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Validaci&#243;n-del-modelo-log&#237;stico">Validaci&#243;n del modelo log&#237;stico<a class="anchor-link" href="#Validaci&#243;n-del-modelo-log&#237;stico">&#182;</a></h2>
+<h2 id="apartado5"> 5. Validación del modelo logístico</h2>
 </div>
 </div>
 </div>
@@ -16319,7 +16360,7 @@ $\displaystyle \varepsilon\in (0,1), Y_p=\begin{cases}0& si\ p\leq \varepsilon\\
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Validaci&#243;n-cruzada">Validaci&#243;n cruzada<a class="anchor-link" href="#Validaci&#243;n-cruzada">&#182;</a></h2>
+<h3 id="apartado5-1"> 5.1. Validación cruzada</h3>
 </div>
 </div>
 </div>
@@ -16438,7 +16479,7 @@ $\displaystyle \varepsilon\in (0,1), Y_p=\begin{cases}0& si\ p\leq \varepsilon\\
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Matrices-de-Confusi&#243;n-y-curvas-ROC">Matrices de Confusi&#243;n y curvas ROC<a class="anchor-link" href="#Matrices-de-Confusi&#243;n-y-curvas-ROC">&#182;</a></h2>
+<h3 id="apartado5-2"> 5.2. Matrices de confusión y curvas ROC</h3>
 </div>
 </div>
 </div>

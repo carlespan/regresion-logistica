@@ -1,0 +1,52 @@
+#indice{
+	font-family: sans-serif;
+	padding: .5%;
+	border: outset 5px #999;
+}
+
+#indice_summary{
+	font-style: italic; 
+	font-weight: bold;
+	font-size: 150%;
+}
+
+.contenidos{
+	display: none;
+}
+#indice:hover .contenidos{
+	display: block;
+}
+
+#indice{
+	position: fixed;
+	z-index: 10;
+	background-color: #FFF9DC;
+}
+
+.contenidos ul{
+	list-style-type: none;
+	font-size: 100%;
+}
+
+
+/*Submenús escondidos*/
+.contenidos ul li ul {
+	display: none;
+}
+.contenidos ul li:hover ul {
+	display: block;
+}
+
+/*Enlaces*/
+.lista a {
+	text-decoration: none;
+	color: #000000;
+	line-height: 160%;
+	font-size: 130%;
+	font-weight: bold;
+}
+
+.sublista a {
+	font-size: 120%;
+}
+
