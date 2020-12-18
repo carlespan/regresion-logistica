@@ -22,6 +22,7 @@
 
 #indice{
 	position: fixed;
+	top: 50px;
 	z-index: 10;
 	background-color: #FFF9DC;
 }
@@ -48,8 +49,21 @@
 	font-size: 130%;
 	font-weight: bold;
 }
-
 .sublista a {
 	font-size: 120%;
 }
 
+/* Icono de salida*/
+#salida{
+	position: fixed;
+	display: inline-block;
+	top: 10px;
+}
+#salida_texto{
+	vertical-align: middle;
+	font-size: 110%;
+}
+.fa-arrow-alt-circle-left{
+	display: inline-block;
+	vertical-align: middle;
+}
