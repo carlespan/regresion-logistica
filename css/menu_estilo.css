@@ -9,8 +9,9 @@
 	font-size: 150%;
 }
 
-#titulo{
-	margin-left: -1.5em;
+#titularh1{
+	margin-left: 1rem;
+	font-size: 1.8rem;
 }
 
 .contenidos{
@@ -29,8 +30,19 @@
 
 .contenidos ul{
 	list-style-type: none;
-	font-size: 100%;
+	font-size: 1.7rem;
+	line-height: 2.8rem;
 }
+
+/*Estilos distintos para las distintas jerarquías de listas*/
+.sublista0  {
+	text-decoration: none;
+	color: #000000;
+	/*line-height: 160%;*/
+}
+/*.sublista1 a {
+	font-size: 120%;
+}*/
 
 
 /*Submenús escondidos*/
@@ -41,27 +53,17 @@
 	display: block;
 }
 
-/*Enlaces*/
-.lista a {
-	text-decoration: none;
-	color: #000000;
-	line-height: 160%;
-	font-size: 130%;
-	font-weight: bold;
-}
-.sublista a {
-	font-size: 120%;
-}
-
 /* Icono de salida*/
 #salida{
 	position: fixed;
 	display: inline-block;
 	top: 10px;
+	left: 10px;
 }
 #salida_texto{
 	vertical-align: middle;
-	font-size: 110%;
+	font-size: 120%;
+	margin: 0.7rem;
 }
 .fa-arrow-alt-circle-left{
 	display: inline-block;

@@ -1,0 +1,28 @@
+Código a añadir al final del todo, antes de cerrar </body>, o bien en el mismo notebook de jupyter al final
+del todo, en una celda tipo "Raw NBConvert":
+
+	1. Portafolio e icono:    
+		
+		<a href="https://carlespan.github.io/#portafolio" id="salida">
+    		<i class="fas fa-arrow-alt-circle-left fa-2x"></i><span id="salida_texto">Portafolio</span>
+  		</a>
+
+	2. Menu: 
+	
+		<script src="js/menu.js" type="text/javascript"></script>
+
+	3. Enlaces al css y a la web externa de iconos:
+
+		  <link rel="stylesheet" type="text/css" href="css/menu_estilo.css">
+  		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="
+		sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+Asegúrate de copiar las carpetas css y js en el repositorio local donde tenga el proyecto.
+
+Si lo has añadido directamente en el jupyter notebook, el menú automático sale directamente al descargar
+el html. Esto tiene la ventaja de que podrás modificar el cuaderno y el html quedará modificado
+automáticamente (sin necesidad de volver a añadir los a, links, etc. de nuevo, pues aparecen ya en 
+el propio cuaderno) al descargar el html, o lo que es más fácil, al abrir la terminal de anaconda navigator
+y ejecutar:
+
+	jupyter nbconvert --to html NombreDelCuaderno.ipynb --output index.html
