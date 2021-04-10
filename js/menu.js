@@ -7,6 +7,7 @@ resumen.innerText = "Indice";
 var navegacion = document.createElement("nav");
 navegacion.className = "contenidos";
 
+
 detalles.appendChild(resumen);
 detalles.appendChild(navegacion);
 document.body.appendChild(detalles);
@@ -15,7 +16,6 @@ for (var q = 0; q < 9; q++) {
   for (var w = 0; w < document.getElementsByTagName("h"+String(q+1)).length; w++) {
   console.log(document.getElementsByTagName("h"+String(q+1))[w]);}
 }
-
 
 // Creo el índice 
 const titulos = document.querySelectorAll("h1, h2, h3, h4, h5, h6"); 
@@ -148,4 +148,11 @@ while (i < titulos.length) {
   continue;
   }
 }
+
+
+$("body").click(function(event) {
+    if (event.target.id != "indice_summary") {
+        detalles.open = false;
+    }
+});
 

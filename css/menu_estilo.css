@@ -1,18 +1,35 @@
 #indice{
 	font-family: sans-serif;
 	padding: .5%;
-	border: outset 5px #999;
 }
 #indice_summary{
-	font-style: italic; 
 	font-weight: bold;
 	font-size: 150%;
 	display: revert;
+	padding: 1rem;
+	border: ridge 3px #999;
+	background-color: #FFFBD1;
+	width: 11rem;
 }
 
 #titularh1{
+	margin: 1rem;
 	margin-left: 1rem;
-	font-size: 1.8rem;
+	margin-bottom: 0;
+	padding: 1rem;
+	font-size: 2.3rem;
+	background-color: #FFFFFF;
+	border-radius: 7px;
+	box-shadow: -5px 1px #ccc;
+	display: none;
+}
+#indice{
+	position: fixed;
+	top: 50px;
+	z-index: 10;
+	height: 100%;
+	width: 70%;
+	overflow-y: auto; 
 }
 
 .contenidos{
@@ -22,37 +39,47 @@
 	display: block;
 }
 
-#indice{
-	position: fixed;
-	top: 50px;
-	z-index: 10;
-	background-color: #FFF9DC;
-}
 
 .contenidos ul{
 	list-style-type: none;
-	font-size: 1.7rem;
-	line-height: 2.8rem;
+	font-size: 1.5rem;
+ 	list-style: none;
+ 	text-decoration: none;
+ 	background-color: #FFFBD1;
+}
+
+.contenidos ul li {
+	position: relative;
+}
+.contenidos ul li a {
+	display: block;
+ 	text-decoration: none;
+ 	padding: 1rem;
+ 	border: 1px solid #999;
+ 	border-bottom: 0;
 }
 
 /*Estilos distintos para las distintas jerarquías de listas*/
-.sublista0  {
-	text-decoration: none;
-	color: #000000;
-	/*line-height: 160%;*/
-}
-/*.sublista1 a {
-	font-size: 120%;
-}*/
 
 
 /*Submenús escondidos*/
 .contenidos ul li ul {
-	display: none;
+	position: absolute;
+ 	left: 299px;
+ 	top: 0;
+ 	display: none;
 }
-.contenidos ul li:hover ul {
+.contenidos ul {
+	margin: 0;
+ 	padding: 0;
+ 	list-style: none;
+ 	width: 300px;
+ 	border-bottom: 1px solid #ccc;
+ }
+.contenidos ul li:hover > ul {
 	display: block;
 }
+
 
 /* Icono de salida*/
 #salida{
